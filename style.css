@@ -1,0 +1,22 @@
+#lignes-list li:hover,
+#arrets-list li:hover {
+  cursor: pointer;
+  width: max-content;
+}
+
+#lignes-list li:hover,
+#arrets-list li:hover {
+  background-color: lightyellow;
+}
+
+.container {
+  width: 100vw;
+  display: flex;
+  justify-self: start;
+  align-items: flex-start;
+  flex-direction: row;
+}
+
+.container ul:first-child {
+  text-overflow: ellipsis;
+}
