@@ -5,3 +5,39 @@ img {
     object-fit: contain;
     width: 100%;
 }
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("assets/loul.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .2;
+    z-index: -1;
+}
+
+.card, .player {
+    transition: .1s;
+    cursor: pointer;
+}
+
+.card:hover, .player:hover {
+    box-shadow: 0 0 11px black;
+}
+
+.card {
+    animation: slide-in .7s ease;
+}
+
+@keyframes slide-in {
+    0% {
+        transform: translateX(-75vw);
+    }
+    100% {
+        transform: translateX(0vw);
+    }
+}
