@@ -6,19 +6,7 @@ img {
     width: 100%;
 }
 
-body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100vh;
-    width: 100vw;
-    background-image: url("assets/loul.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .2;
-    z-index: -1;
-}
+
 
 .card, .player {
     transition: .1s;
@@ -26,7 +14,7 @@ body::before {
 }
 
 .card:hover, .player:hover {
-    box-shadow: 0 0 11px black;
+    box-shadow: 0 0 .5rem black;
 }
 
 .card {

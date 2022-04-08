@@ -1,0 +1,45 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.vw-50 {
+  width: 50vw;
+}
+
+.overflow-y-auto {
+  overflow-y: auto;
+  overflow-x: visible;
+}
+
+button {
+  position: absolute;
+  top: .25rem;
+  right: 1rem;
+  z-index: 1;
+  line-height: 1rem !important;
+}
+
+
+div.card-list:first-child:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-image: url("../public/assets/loul.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: .6;
+  z-index: -1;
+}
