@@ -1,0 +1,28 @@
+.card {
+  display: inline-flex;
+  & > div {
+    cursor: pointer;
+    box-shadow: 0 0 2px black;
+    transition: 0.2s ease;
+    animation: pop 0.2s ease-out;
+    &:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 8px black;
+      z-index: 1;
+    }
+  }
+}
+
+@keyframes pop {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  55% {
+    transform: scale(1.07);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.01);
+  }
+}
